@@ -1,0 +1,4 @@
+swc
+===
+
+Software carpentry workshop
