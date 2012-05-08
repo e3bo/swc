@@ -1,0 +1,5 @@
+def double(x):
+    return 2 * x
+
+print 'double of 5 = ', double(5)
+print 'double of double of 5 = ', double(double(5))

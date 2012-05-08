@@ -1,0 +1,8 @@
+Date,Breed,Count
+2012-05-04,Broiler,5
+2012-05-04,Crested Red,6
+2012-05-04,Buff Orpington,1
+2012-05-04,Bantam,17
+2012-05-06,Broiler,1
+2012-05-06,Golden Delicious,3
+2012-05-06,Texas Leghorn,2

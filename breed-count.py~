@@ -1,0 +1,23 @@
+import sys
+breed_to_count = sys.argv[1]
+
+def count_birds(reader, breed_to_count):
+    source.readline() #First line is header, so ignore
+    total = 0
+    for line in reader:
+        date, breed, count = line.split(',')
+        if breed_to_count == breed:
+            total += int(count) 
+    return total
+
+grand_total = 0
+for filename in sys.argv[1:]:
+    source = open(filename, 'r')
+    total = count_birds(source, breed_to_count)    
+    grand_total += total
+    source.close()
+    print total, filename
+
+    source.close()
+
+print grand_total, 'total'

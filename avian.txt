@@ -1,0 +1,4 @@
+Date,Breed,Count
+2012-05-04,Broiler,2
+2012-05-04,Crested Red,6
+2012-05-04,Buff Orpington,1
