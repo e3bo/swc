@@ -6,9 +6,6 @@ parser.add_argument("-b", "--breed", help="One breed to select for counting")
 parser.add_argument("files", help="The names of the data files", nargs='+')
 args = parser.parse_args()
 
-if args.breed:
-    selected_breed = args.breed
-
 def count_birds(reader, selected):
     source.readline() #First line is header, so ignore
     total = 0
@@ -22,7 +19,7 @@ def count_birds(reader, selected):
 grand_total = 0
 for filename in args.files:
     source = open(filename, 'r')
-    total = count_birds(source, selected_breed)    
+    total = count_birds(source, args.breed)    
     grand_total += total
     source.close()
     print total, filename
